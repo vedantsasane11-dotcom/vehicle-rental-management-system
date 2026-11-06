@@ -127,7 +127,8 @@ It returns:
 
 https://github.com/vedantsasane11-dotcom/vehicle-rental-management-system
 
-**Live Website:** Not deployed yet.
+**Live Website:** 
+https://vedantsasane11-dotcom.github.io/vehicle-rental-management-system/
 
 The frontend and PHP/MySQL backend require separate hosting for a fully functional online deployment. GitHub Pages alone cannot execute PHP or connect to MySQL.
 
