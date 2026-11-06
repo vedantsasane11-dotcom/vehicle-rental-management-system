@@ -1,0 +1,15 @@
+
+# Private database credentials
+/api/db.php
+
+# Temporary testing files
+/test.php
+/api/test_connection.php
+
+# Environment secrets
+.env
+
+# Editor and system files
+.vscode/
+.DS_Store
+Thumbs.db

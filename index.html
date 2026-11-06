@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vehicle Rental Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">VR</div>
+            <div>
+                <h2>DriveRent</h2>
+                <p>Management System</p>
+            </div>
+        </div>
+
+        <p class="menu-heading">MAIN MENU</p>
+
+        <nav class="navigation">
+            <a href="#dashboard" class="nav-link active">
+                <span>▦</span> Dashboard
+            </a>
+
+            <a href="#vehicles" class="nav-link">
+                <span>🚗</span> Vehicles
+            </a>
+
+            <a href="#customers" class="nav-link">
+                <span>♙</span> Customers
+            </a>
+
+            <a href="#bookings" class="nav-link">
+                <span>▤</span> Bookings
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="admin-avatar">VS</div>
+            <div>
+                <h4>Administrator</h4>
+                <p>System Manager</p>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP HEADER -->
+        <header class="topbar">
+
+            <div>
+                <p class="breadcrumb">MAIN MENU / OVERVIEW</p>
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="profile">
+                <div class="profile-avatar">VS</div>
+                <div>
+                    <h4>Vedant Sasane</h4>
+                    <p>Admin</p>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME SECTION -->
+       <section class="welcome" id="dashboard">
+
+    <div>
+        <p class="welcome-label">VEHICLE RENTAL MANAGEMENT</p>
+
+        <h2>Welcome back, Vedant!</h2>
+
+        <p>
+            Manage your vehicles, customers and bookings in one place.
+        </p>
+    </div>
+
+    <div class="welcome-icon">🚘</div>
+
+</section>
+
+
+        <!-- STATISTICS -->
+        <section class="overview">
+
+            <div class="section-title">
+                <div>
+                    <h2>Business Overview</h2>
+                    <p>Summary of your rental business</p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">♙</div>
+                    <p>Total Customers</p>
+                    <h2 id="totalCustomers">0</h2>
+                    <span>Registered customers</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">🚗</div>
+                    <p>Total Vehicles</p>
+                    <h2 id="totalVehicles">0</h2>
+                    <span>Vehicles in fleet</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">✓</div>
+                    <p>Available Vehicles</p>
+                    <h2 id="availableVehicles">0</h2>
+                    <span>Ready for booking</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">▣</div>
+                    <p>Rented Vehicles</p>
+                    <h2 id="rentedVehicles">0</h2>
+                    <span>Currently rented</span>
+                </div>
+
+                <div class="stat-card revenue-card">
+                    <div class="stat-icon teal">₹</div>
+                    <p>Total Rental Revenue</p>
+                    <h2 id="totalRevenue">₹0</h2>
+                    <span>Total recorded payments</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT BOOKINGS -->
+        
+<!-- VEHICLE MANAGEMENT SECTION -->
+
+<section class="vehicles-section" id="vehicles">
+
+    <div class="section-title">
+        <div>
+            <h2>Vehicle Management</h2>
+            <p>View and manage your rental fleet</p>
+        </div>
+
+        <button class="add-button" type="button">
+            + Add Vehicle
+        </button>
+    </div>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Vehicle ID</th>
+                    <th>Model Name</th>
+                    <th>Registration No.</th>
+                    <th>Category</th>
+                    <th>Daily Rate</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>V201</td>
+                    <td>Activa 6G</td>
+                    <td>MH12-AB-1234</td>
+                    <td>Bike</td>
+                    <td>₹500</td>
+                    <td><span class="status rented">Rented</span></td>
+                </tr>
+
+                <tr>
+                    <td>V202</td>
+                    <td>Honda City</td>
+                    <td>MH12-CD-5678</td>
+                    <td>Sedan</td>
+                    <td>₹2,000</td>
+                    <td><span class="status available">Available</span></td>
+                </tr>
+
+                <tr>
+                    <td>V203</td>
+                    <td>Mahindra Thar</td>
+                    <td>MH14-EF-9012</td>
+                    <td>SUV</td>
+                    <td>₹3,500</td>
+                    <td><span class="status rented">Rented</span></td>
+                </tr>
+
+                <tr>
+                    <td>V204</td>
+                    <td>Royal Enfield</td>
+                    <td>MH12-GH-3456</td>
+                    <td>Bike</td>
+                    <td>₹800</td>
+                    <td><span class="status available">Available</span></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
